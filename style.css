@@ -78,7 +78,7 @@ h1 {
 
 .error-input {
   border: 2px solid red !important;
-  background-image: url("/images/icon-error.svg") !important;
+  background-image: url("./images/icon-error.svg") !important;
   background-repeat: no-repeat !important;
   background-position: right 15px top 5px !important;
   background-size: auto !important;
@@ -167,7 +167,7 @@ button:visited {
   }
 
   .attribution {
-    font-size: 12px;
+    font-size: 12 px;
     bottom: 0;
   }
 }
