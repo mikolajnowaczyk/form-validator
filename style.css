@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  margin: 0;
+}
+
+.left-wrapper {
+  text-align: left;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-wrapper {
+  text-align: center;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.trial-wrapper {
+  padding: 5px 65px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
+}
+
+.trial {
+  text-align: center;
+}
+
+.form-control {
+  background: white;
+  padding: 30px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.125);
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  text-align: right;
+  visibility: hidden;
+}
+
+.error-input {
+  border: 2px solid red;
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 5px;
+}
+
+input {
+  width: 100%;
+  border: 2px solid hsl(246, 25%, 77%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid hsl(249, 10%, 26%);
+}
+
+input::placeholder {
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font: inherit;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  border: 2px solid hsl(154, 59%, 51%);
+}
+
+button:hover {
+  background-color: hsl(154, 84%, 62%);
+  border: 2px solid hsl(154, 84%, 62%);
+}
+
+button:visited {
+  border: none;
+}
+
+.terms {
+  font-size: 10px;
+}
+
+.terms a {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media(max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+
+  html {
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+}
