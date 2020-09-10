@@ -27,4 +27,4 @@ Project was created with:
 
 ### Project status
 
-In developement
+I consider this project was finished.

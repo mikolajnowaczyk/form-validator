@@ -26,22 +26,23 @@
       </div>
       <form class="form-control">
         <div class="input-wrapper">
-          <input type="text" name="name" id="inputName" placeholder="First Name">
-          <p class="error-message" id="errorFirstName">First Name cannot be empty</p>
+          <input type="text" aria-label="name input" name="name" id="inputName" placeholder="First Name">
+          <p class="error-message">First Name cannot be empty</p>
         </div>
         <div class="input-wrapper">
-          <input type="text" name="surname" id="inputSurname" placeholder="Last Name">
-          <p class="error-message" id="errorLastName">Last Name cannot be empty</p>
+          <input type="text" name="surname" id="inputSurname" placeholder="Last Name" aria-label="last name input">
+          <p class="error-message">Last Name cannot be empty</p>
         </div>
         <div class="input-wrapper">
-          <input type="email" name="email" id="inputEmail" placeholder="Email Address">
-          <p class="error-message" id="errorLastName">Looks like this is not an email</p>
+          <input type="email" name="email" id="inputEmail" placeholder="Email Address" aria-label="email input">
+          <p class="error-message">Looks like this is not an email</p>
         </div>
         <div class="input-wrapper">
-          <input type="password" name="password" id="inputPassword" placeholder="Password" autocomplete="off">
-          <p class="error-message" id="errorPassword">Password cannot be empty</p>
+          <input type="password" name="password" id="inputPassword" placeholder="Password" aria-label="password input"
+            autocomplete="off">
+          <p class="error-message">Password cannot be empty</p>
         </div>
-        <button type="submit" name="btn-submit">Claim your free trial</button>
+        <button aria-label="Submit form" type="submit" name="btn-submit">Claim your free trial</button>
         <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
     </div>
