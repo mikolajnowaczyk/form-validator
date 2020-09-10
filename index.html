@@ -26,20 +26,20 @@
       </div>
       <form class="form-control">
         <div class="input-wrapper">
-          <input class="error-input" type="text" name="name" id="name" placeholder="First Name">
-          <p class="error" id="errorFirstName">First Name cannot be empty</p>
+          <input type="text" name="name" id="inputName" placeholder="First Name">
+          <p class="error-message" id="errorFirstName">First Name cannot be empty</p>
         </div>
         <div class="input-wrapper">
-          <input type="text" name="surname" id="surname" placeholder="Last Name">
-          <p class="error" id="errorLastName">Last Name cannot be empty</p>
+          <input type="text" name="surname" id="inputSurname" placeholder="Last Name">
+          <p class="error-message" id="errorLastName">Last Name cannot be empty</p>
         </div>
         <div class="input-wrapper">
-          <input type="email" name="email" id="email" placeholder="Email Address">
-          <p class="error" id="errorLastName">Looks like this is not an email</p>
+          <input type="email" name="email" id="inputEmail" placeholder="Email Address">
+          <p class="error-message" id="errorLastName">Looks like this is not an email</p>
         </div>
         <div class="input-wrapper">
-          <input type="password" name="password" id="password" placeholder="Password">
-          <p class="error" id="errorPassword">Password cannot be empty</p>
+          <input type="password" name="password" id="inputPassword" placeholder="Password" autocomplete="off">
+          <p class="error-message" id="errorPassword">Password cannot be empty</p>
         </div>
         <button type="submit" name="btn-submit">Claim your free trial</button>
         <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
@@ -52,6 +52,7 @@
       coded by <a href="https://github.com/mikolajnowaczyk">Mikołaj Nowaczyk</a>.
     </p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
